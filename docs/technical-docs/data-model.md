@@ -37,7 +37,6 @@ The GuessingObject table stores all the items that can be guessed during the gam
 | `scale_top` | float | highest value on the guessing scale |
 | `scale_bottom` | float | lowest value on the guessing scale |
 
-
 Table: `GameSet`
 
 The GameSet table contains 10 items from the GuessingObject table, as each game needs a set of 10 different objects.
@@ -50,4 +49,16 @@ The GameSet table contains 10 items from the GuessingObject table, as each game 
 | ... |
 | `subject_9` | Integer | foreign key → GuessingObject.id <br> guessing object nine |
 | `subject_10` | Integer | foreign key → GuessingObject.id <br> guessing object ten |
+
+Table: `Score`
+
+The Score table records the players' scores for each game set.
+
+| Attribute | Type | Description |
+| --- | --- | --- |
+| `id` | Integer | primary key |
+| `game_id` | Integer | foreign key → GameSet.id <br> indicates which game the score belongs to |
+| `username` | String | username of score holder |
+| `points` | float | points scored by the user |
+
 
