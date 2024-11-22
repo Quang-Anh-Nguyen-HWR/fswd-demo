@@ -31,5 +31,9 @@ The GuessingObject table stores all the items that can be guessed during the gam
 | Attribute | Type | Description |
 | --- | --- | --- |
 | `id` | Integer | primary key |
-| `git diff` | Show file differences that **haven't been** staged |
+| `picture` | BLOB | picture of guessing object |
+| `question` | String | question for the guessing object displayed to the user |
+| `value` | float | correct answer/value to the question |
+| `scale_top` | float | highest value on the guessing scale |
+| `scale_bottom` | float | lowest value on the guessing scale |
 
