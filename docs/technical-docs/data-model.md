@@ -5,7 +5,7 @@ nav_order: 2
 ---
 
 {: .label }
-[Quang Anh Nguyen]
+Quang Anh Nguyen
 
 {: .no_toc }
 # Data model
@@ -17,6 +17,6 @@ nav_order: 2
 {: toc }
 </details>
 
-![First Data Model](../assets/images/Data_Structure_1)
+This is the initial version of the data model for the web application.
 
-[Visualize and describe the data model(s) of your application. This description should match the actual implementation.]
+![First Data Model](../assets/images/Data_Structure_1)
