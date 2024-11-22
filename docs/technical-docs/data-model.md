@@ -17,12 +17,12 @@ Quang Anh Nguyen
 {: toc }
 </details>
 
-This is the initial version of the data model for the web application.
+This is the initial version of the data model for the web application's first game
 
 ![First Data Model](../assets/images/Data_Structure_1)
 
 The database should include three tables for managing the data: 
-GuessingObject, GameSet, and Score.
+**GuessingObject, GameSet, and Score**
 
 Table: `GuessingObject`
 
@@ -36,4 +36,18 @@ The GuessingObject table stores all the items that can be guessed during the gam
 | `value` | float | correct answer/value to the question |
 | `scale_top` | float | highest value on the guessing scale |
 | `scale_bottom` | float | lowest value on the guessing scale |
+
+
+Table: `GameSet`
+
+The GameSet table contains 10 items from the GuessingObject table, as each game needs a set of 10 different objects.
+
+| Attribute | Type | Description |
+| --- | --- | --- |
+| `id` | Integer | primary key |
+| `subject_1` | Integer | foreign key → GuessingObject.id <br> guessing object one |
+| `subject_2` | Integer | foreign key → GuessingObject.id <br> guessing object two |
+| ... |
+| `subject_9` | Integer | foreign key → GuessingObject.id <br> guessing object nine |
+| `subject_10` | Integer | foreign key → GuessingObject.id <br> guessing object ten |
 
