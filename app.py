@@ -9,4 +9,3 @@ def hello_world():
 @app.route('/lists/<int:id>')
 def list(id):
     return 'Todo: implement business logic to show all to-dos of a particular list'
-
